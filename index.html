@@ -3,52 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Calculator</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Avengers Power Stats</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="calculator">
-    <div class="display" id="display">0</div>
-    <div class="buttons">
-      <div class="row">
-        <button class="btn function" onclick="clearAll()">AC</button>
-        <button class="btn function" onclick="applyTrig('sin')">sin</button>
-        <button class="btn function" onclick="applyTrig('cos')">cos</button>
-        <button class="btn function" onclick="applyTrig('tan')">tan</button>
-      </div>
-      <div class="row">
-        <button class="btn function" onclick="eraseChar()">C</button>
-        <button class="btn function" onclick="toggleSign()">±</button>
-        <button class="btn function" onclick="applyPercent()">%</button>
-        <button class="btn operator" onclick="chooseOperator('/')">÷</button>
-      </div>
-      <div class="row">
-        <button class="btn" onclick="appendNumber('7')">7</button>
-        <button class="btn" onclick="appendNumber('8')">8</button>
-        <button class="btn" onclick="appendNumber('9')">9</button>
-        <button class="btn operator" onclick="chooseOperator('*')">×</button>
-      </div>
-      <div class="row">
-        <button class="btn" onclick="appendNumber('4')">4</button>
-        <button class="btn" onclick="appendNumber('5')">5</button>
-        <button class="btn" onclick="appendNumber('6')">6</button>
-        <button class="btn operator" onclick="chooseOperator('-')">−</button>
-      </div>
-      <div class="row">
-        <button class="btn" onclick="appendNumber('1')">1</button>
-        <button class="btn" onclick="appendNumber('2')">2</button>
-        <button class="btn" onclick="appendNumber('3')">3</button>
-        <button class="btn operator" onclick="chooseOperator('+')">+</button>
-      </div>
-      <div class="row">
-        <button class="btn zero" onclick="appendNumber('0')">0</button>
-        <button class="btn" onclick="appendNumber('.')">.</button>
-        <button class="btn equal" onclick="evaluate()">=</button>
-      </div>
-    </div>
+<nav>
+    <ul>
+      <li><a href="Cover.html">Home</a></li>
+      <li><a href="Cover.html">About</a></li>
+      <li><a href="Cover.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+</head>
+<body>
+
+  <!-- Thor -->
+  <div class="hero-card">
+    <h2>Thor</h2>
+    <div class="bio"><strong>Full Name:</strong> Thor Odinson <br><strong> Place of Birth:</strong> Asgard <br> <strong>Race:</strong> Asgardian</div>
+    <div class="stat"><span class="stat-label">Intelligence:</span><div class="bar-container"><div class="bar-fill" style="width:70%"></div></div><span class="stat-value">70%</span></div>
+    <div class="stat"><span class="stat-label">Strength:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Speed:</span><div class="bar-container"><div class="bar-fill" style="width:92%"></div></div><span class="stat-value">92%</span></div>
+    <div class="stat"><span class="stat-label">Durability:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Power:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Combat:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
   </div>
 
+  <!-- Iron Man -->
+  <div class="hero-card">
+    <h2>Iron Man</h2>
+    <div class="bio"><strong>Full Name:</strong> Tony Stark <br> <strong> Place of Birth:</strong> New York City <br><strong>Race:</strong> Human</div>
+    <div class="stat"><span class="stat-label">Intelligence:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Strength:</span><div class="bar-container"><div class="bar-fill" style="width:85%"></div></div><span class="stat-value">85%</span></div>
+    <div class="stat"><span class="stat-label">Speed:</span><div class="bar-container"><div class="bar-fill" style="width:58%"></div></div><span class="stat-value">58%</span></div>
+    <div class="stat"><span class="stat-label">Durability:</span><div class="bar-container"><div class="bar-fill" style="width:85%"></div></div><span class="stat-value">85%</span></div>
+    <div class="stat"><span class="stat-label">Power:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Combat:</span><div class="bar-container"><div class="bar-fill" style="width:64%"></div></div><span class="stat-value">64%</span></div>
+  </div>
+
+  <!-- Hulk -->
+  <div class="hero-card">
+    <h2>Hulk</h2>
+    <div class="bio"><strong>Full Name:</strong> Bruce Banner <br> <strong> Place of Birth:</strong> Ohio <br><strong>Race:</strong> Human (Radiation)</div>
+    <div class="stat"><span class="stat-label">Intelligence:</span><div class="bar-container"><div class="bar-fill" style="width:88%"></div></div><span class="stat-value">88%</span></div>
+    <div class="stat"><span class="stat-label">Strength:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Speed:</span><div class="bar-container"><div class="bar-fill" style="width:47%"></div></div><span class="stat-value">47%</span></div>
+    <div class="stat"><span class="stat-label">Durability:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+    <div class="stat"><span class="stat-label">Power:</span><div class="bar-container"><div class="bar-fill" style="width:52%"></div></div><span class="stat-value">52%</span></div>
+    <div class="stat"><span class="stat-label">Combat:</span><div class="bar-container"><div class="bar-fill" style="width:85%"></div></div><span class="stat-value">85%</span></div>
+  </div>
+
+  <!-- Black Widow -->
+  <div class="hero-card">
+    <h2>Black Widow</h2>
+    <div class="bio"><strong>Full Name:</strong> Natalia Romanova <br> <strong> Place of Birth:</strong> Russia <br><strong>Race:</strong> Human</div>
+    <div class="stat"><span class="stat-label">Intelligence:</span><div class="bar-container"><div class="bar-fill" style="width:75%"></div></div><span class="stat-value">75%</span></div>
+    <div class="stat"><span class="stat-label">Strength:</span><div class="bar-container"><div class="bar-fill" style="width:13%"></div></div><span class="stat-value">13%</span></div>
+    <div class="stat"><span class="stat-label">Speed:</span><div class="bar-container"><div class="bar-fill" style="width:27%"></div></div><span class="stat-value">27%</span></div>
+    <div class="stat"><span class="stat-label">Durability:</span><div class="bar-container"><div class="bar-fill" style="width:32%"></div></div><span class="stat-value">32%</span></div>
+    <div class="stat"><span class="stat-label">Power:</span><div class="bar-container"><div class="bar-fill" style="width:39%"></div></div><span class="stat-value">39%</span></div>
+    <div class="stat"><span class="stat-label">Combat:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+  </div>
+
+  <!-- Hawkeye -->
+  <div class="hero-card">
+    <h2>Hawkeye</h2>
+    <div class="bio"><strong>Full Name:</strong> Clinton Barton <br> <strong> Place of Birth:</strong> Iowa <br> <strong>Race:</strong> Human</div>
+    <div class="stat"><span class="stat-label">Intelligence:</span><div class="bar-container"><div class="bar-fill" style="width:50%"></div></div><span class="stat-value">50%</span></div>
+    <div class="stat"><span class="stat-label">Strength:</span><div class="bar-container"><div class="bar-fill" style="width:12%"></div></div><span class="stat-value">12%</span></div>
+    <div class="stat"><span class="stat-label">Speed:</span><div class="bar-container"><div class="bar-fill" style="width:23%"></div></div><span class="stat-value">23%</span></div>
+    <div class="stat"><span class="stat-label">Durability:</span><div class="bar-container"><div class="bar-fill" style="width:14%"></div></div><span class="stat-value">14%</span></div>
+    <div class="stat"><span class="stat-label">Power:</span><div class="bar-container"><div class="bar-fill" style="width:26%"></div></div><span class="stat-value">26%</span></div>
+    <div class="stat"><span class="stat-label">Combat:</span><div class="bar-container"><div class="bar-fill" style="width:80%"></div></div><span class="stat-value">80%</span></div>
+  </div>
   
-  <script src="script.js"></script>
+  <!-- Captain America -->
+  <div class="hero-card">
+    <h2>Captain America</h2>
+    <div class="bio"><strong>Full Name:</strong> Steve Rogers <br> <strong> Place of Birth:</strong> America <br> <strong>Race:</strong> Human</div>
+    <div class="stat"><span class="stat-label">Intelligence:</span><div class="bar-container"><div class="bar-fill" style="width:63%"></div></div><span class="stat-value">63%</span></div>
+    <div class="stat"><span class="stat-label">Strength:</span><div class="bar-container"><div class="bar-fill" style="width:19%"></div></div><span class="stat-value">19%</span></div>
+    <div class="stat"><span class="stat-label">Speed:</span><div class="bar-container"><div class="bar-fill" style="width:35%"></div></div><span class="stat-value">35%</span></div>
+    <div class="stat"><span class="stat-label">Durability:</span><div class="bar-container"><div class="bar-fill" style="width:56%"></div></div><span class="stat-value">56%</span></div>
+    <div class="stat"><span class="stat-label">Power:</span><div class="bar-container"><div class="bar-fill" style="width:55%"></div></div><span class="stat-value">55%</span></div>
+    <div class="stat"><span class="stat-label">Combat:</span><div class="bar-container"><div class="bar-fill" style="width:100%"></div></div><span class="stat-value">100%</span></div>
+  </div>
+
 </body>
 </html>

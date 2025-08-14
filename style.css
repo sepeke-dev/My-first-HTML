@@ -1,70 +1,94 @@
- * {
-      box-sizing: border-box;
-    }
-
-    body {
+.body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      padding: 20px;
     }
 
-    .calculator {
-      width: 360px;
+    .hero-card {
+      background: rgb(252, 252, 252);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .display {
-      background-color: black;
-      color: white;
-      text-align: right;
-      padding: 30px 20px 10px;
-      font-size: 2.5rem;
-      height: 100px;
-      overflow-x: auto;
+    .hero-card h2 {
+      margin-top: 0;
+      color: #333;
     }
 
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      padding: 10px;
+    .bio {
+      font-size: 0.95em;
+      margin-bottom: 15px;
+      color: #555;
     }
 
-    .row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
+    .stat {
+      margin: 8px 0;
     }
 
-    .btn {
-      height: 60px;
-      border-radius: 50%;
-      font-size: 1.4rem;
-      border: none;
-      color: white;
-      background-color: #333;
-      cursor: pointer;
+    .stat-label {
+      display: inline-block;
+      width: 130px;
+      font-weight: bold;
+      color: #333;
     }
 
-    .btn.function {
-      background-color: #a5a5a5;
-      color: black;
+    .bar-container {
+      background: #eceeef;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 60%;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
     }
 
-    .btn.operator {
-      background-color: #ff9500;
+    .bar-fill {
+      height: 12px;
+      background-color: #45e90a;
+      width: 0;
+      transition: width 1s ease-in-out;
     }
 
-    .btn.equal {
-      background-color: #ff9500;
+    .stat-value {
+      font-size: 0.9em;
+      color: #222;
     }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .btn.zero {
-      grid-column: span 2;
-      border-radius: 50px;
-      text-align: left;
-      padding-left: 30px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+nav {
+  background-color: #3399ff; /* Blue nav */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #00000044;
+  border-radius: 5px;
+}
+
